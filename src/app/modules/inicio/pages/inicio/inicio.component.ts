@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TarjetasInicio } from 'src/app/models/modelos';
+import { TarjetaLagos } from 'src/app/models/lagos';
 
 
 @Component({
@@ -9,16 +9,16 @@ import { TarjetasInicio } from 'src/app/models/modelos';
 })
 export class InicioComponent {
 // propiedad publica (tipo array)
-  public info: TarjetasInicio[]
+  public info: TarjetaLagos[]
 
   // inicializa la propiedad info
   constructor()  {
     this.info=[
       {
-        titulo: "tarjeta 1",
-        descripcion: "Gato, pelo blanco machado.",
-        imagen: "https://estaticos-cdn.prensaiberica.es/clip/ce847ef4-8930-42e0-9c1d-9929902d3820_16-9-discover-aspect-ratio_default_0.jpg",
-        alt:"Michi"
+        titulo: "Lagos",
+        descripcion: "Los siete lagos, Patagonia Argentina",
+        imagen: "https://anbariloche1.cdn.net.ar/252/anbariloche/images/86/23/862328_848499e7d9741bbe00234e97881501a09b959ac809d4ce5175aea88763c48420/xs.webp",
+        alt:"Lago Gutierrez"
       }
     ]
   }

@@ -2,20 +2,21 @@
   <div class="row">
     <h1>Registrate</h1>
     <i class="material-icons" style="font-size: 200px;">person</i>
+
     <mat-form-field appearance="fill">
       <mat-label>Ingrese un Usuario</mat-label>
-      <input matInput placeholder="Placeholder">
+      <input [(ngModel)]="usuarios.nombre" matInput placeholder="Placeholder" required>
     </mat-form-field>
     <mat-form-field>
 
       <mat-label>Ingrese una Contraseña</mat-label>
-      <input matInput [type]="hide ? 'password' : 'text'">
+      <input [(ngModel)]="usuarios.contrasena" matInput [type]="hide ? 'password' : 'text'" required>
       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
     </mat-form-field>
 
-    <button class="boton" mat-raised-button color="primary">Resgistrar</button>
+    <button class="boton" mat-raised-button color="primary" (click)="registrarse">Resgistrar</button>
   </div>
 </div>
 
